@@ -1,0 +1,26 @@
+.input_field {
+    -fx-background-color: #1c8bc1;
+    -fx-text-fill: black;
+}
+.label_field {
+    -fx-text-fill: white;
+}
+
+.header {
+    -fx-font: 3em "Brush Script MT";
+}
+
+.wrapper {
+    -fx-background-image: url("/sample/sea-landscape-water-ocean-37859.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+
+}
+.grid {
+    -fx-background-color: rgba(173, 216, 230, 0.31);
+    -fx-padding: 25 25 25 10;
+}
+.sign_in {
+
+}

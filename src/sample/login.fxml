@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane alignment="center" hgap="10" styleClass="wrapper" stylesheets="@login.css" vgap="10"
+          xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <GridPane prefWidth="250.0" styleClass="grid">
+        <Text styleClass="header" text="Welcome" GridPane.columnSpan="2" GridPane.rowIndex="1"/>
+
+        <Label styleClass="label_field" text="User Name: " GridPane.rowIndex="2"/>
+
+        <TextField prefHeight="26.0" prefWidth="140.0" styleClass="input_field" GridPane.columnIndex="2"
+                   GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+            <effect>
+                <Glow level="0.8"/>
+            </effect>
+        </TextField>
+
+        <Label styleClass="label_field" text="Password: " GridPane.rowIndex="3"/>
+
+        <PasswordField fx:id="passwordField" styleClass="input_field" GridPane.columnIndex="2"
+                       GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+            <effect>
+                <Glow level="0.8"/>
+            </effect>
+        </PasswordField>
+        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="7">
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleSubmitButtonAction" text="Sign In"/>
+        </HBox>
+
+        <Text fx:id="actionTarget" GridPane.columnIndex="2" GridPane.rowIndex="8"/>
+        <columnConstraints>
+            <ColumnConstraints prefWidth="100.0"/>
+            <ColumnConstraints fillWidth="false" prefWidth="10.0"/>
+            <ColumnConstraints prefWidth="100.0"/>
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+            <RowConstraints/>
+            <RowConstraints/>
+        </rowConstraints>
+    </GridPane>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+
+
+</GridPane>
+
